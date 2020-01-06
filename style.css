@@ -152,7 +152,7 @@
 
    /* Section*/
   section#home {
-    background: url("/bb-slider-00.jpg") no-repeat center center;
+    background: url("./bb-slider-00.jpg") no-repeat center center;
   }
   
   section#about {
@@ -164,11 +164,12 @@
   }
 
   section#wladze {
-    background: rgb(79, 126, 255) no-repeat center center;
+    background: white no-repeat center center;
+    
   }
   
   section1#regulacje {
-    background: rgb(79, 126, 255) no-repeat center center;
+    background: #a8a077 no-repeat center center;
   }
 
   section1#kontakt {
@@ -194,6 +195,21 @@
 .button:hover {
   background: #15836f;
   color: rgb(156, 156, 156);
+  padding: 4px;
+}
+
+.buttonn {
+  border-radius: 5px;
+  background-color: #d82323;
+  color: white;
+  padding: 2px 5px;
+}
+
+.buttonn:hover {
+  background-color: rgb(253, 192, 192);
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+
 }
 
 .popup {
@@ -244,4 +260,38 @@ align-items: center;
   border-radius: 50%;
   box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
   cursor: pointer;
+}
+
+
+/* Władze  */ 
+
+.contain {
+  float: left;
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.schem{
+flex: 2;
+height: 85%;
+margin-left: 2%;
+background-image: url("./schemat.png");
+background-size: cover;
+}
+
+.text{
+flex:1;
+color: black;
+background-color: antiquewhite;
+height: 85%;
+font-size: 4vh;
+}
+
+.text h1 {
+  font-size: 2vw;
 }
