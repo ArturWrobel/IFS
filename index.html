@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./alertify/alertify.js"></script>
@@ -15,18 +15,26 @@
 <body>
     
     <div class="container">
-        <nav class="navbar">
-            <div class="logo"><a href="http://127.0.0.1:5500/index.html" class="h"><img src="ifs-logotype.png" alt="logo"></a></div>
+        <header>
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+        
+        <nav class="nav">
+            <div class="logo"><a href="http://iiffss.s3-website.eu-central-1.amazonaws.com/" class="h"><img src="ifs-logotype.png" alt="logo"></a></div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">O firmie</a></li>
-                <li><a href="#personel">Personel</a></li>
-                <li><a href="#wladze">Władze</a></li>
-                <li><a href="#regulacje">Regulacje</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href="#home" class="menu-nav__link">Home</a></li>
+                <li class="menu-nav__item"><a href="#about" class="menu-nav__link">O firmie</a></li>
+                <li class="menu-nav__item"><a href="#personel" class="menu-nav__link">Personel</a></li>
+                <li class="menu-nav__item"><a href="#wladze" class="menu-nav__link">Władze</a></li>
+                <li class="menu-nav__item"><a href="#regulacje" class="menu-nav__link">Regulacje</a></li>
+                <li class="menu-nav__item"><a href="#kontakt" class="menu-nav__link">Kontakt</a></li>
               </ul>
             </nav>
+        </header>
+
+        <main>
         <section id="home">
           <h1 class="move" >Interbank Financial Services</h1>
 
@@ -148,16 +156,23 @@
             <p class="lead">Tel.: +48 22 820 3838</p>
             <p class="lead">ifs@ifsbrokers.pl</p>
             <p class="lead">www.ifsbrokers.pl</p>
-                <br>
+            <br>
+            <p>               
+                <a href="https://wa.me/48513134071" target="_blank" ><img src="./iconfinder_whatsapp_287520.png" alt="" srcset="" style="height: 4vh;" ></a>
+                <a href="https://msng.link/o/?Artur Wrobel=fm" target="_blank" ><img src="./iconfinder_Facebook_Messenger_1298720.png" alt="" srcset="" style="height: 4vh;" ></a>
+            </p>
+            <br>
             <h2>Sad Rejonowy dla miasta stolecznego Warszawy w Warszawie XII</h2>
             <h2>Wydzial Gospodarczy Krajowego Rejestru Sądowego</h2>
             <p class="lead"><b>Numer KRS:</b> 0000018077</p class="lead">
             <p class="lead"><b>Regon:</b> 013100378</p>
             <p class="lead"><b>NIP:</b> 527-21-59-929</p>
             <p class="lead"><b>Kapital zakładowy:</b> 80 000,00 złotych</p>
+            
         </div>
         </section1>
       </div>
+    </main>
 
       <footer>
         <a href="http://www.arturwrobel.net/" class="footer" target="_blank">Copyright ARW 2019</a>
