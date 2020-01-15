@@ -43,11 +43,20 @@ function complete() {
     const hamburger = document.querySelector('.menu-btn__burger');
     const nav = document.querySelector('.nav');
     const menuNav = document.querySelector('.menu-nav');
+    const tog = document.querySelectorAll('.menu-nav__link');
     const navItems = document.querySelectorAll('.menu-nav__item');
+    const hide = document.querySelectorAll(".hide")
     
     let showMenu = false;
     
     menuBtn.addEventListener('click', toggleMenu);
+    
+    tog.forEach(function(x) {
+      x.addEventListener("click", closeNav)
+    }
+    )
+
+    //tog.addEventListener('click', closeNav);
     
     function toggleMenu() {
       if(!showMenu) {
@@ -55,6 +64,7 @@ function complete() {
         nav.classList.add('open');
         menuNav.classList.add('open');
         navItems.forEach(item => item.classList.add('open'));
+        hide.forEach(item => item.classList.add("nic"));
     
         showMenu = true;
       } else {
@@ -62,8 +72,24 @@ function complete() {
         nav.classList.remove('open');
         menuNav.classList.remove('open');
         navItems.forEach(item => item.classList.remove('open'));
+        hide.forEach(item => item.classList.remove("nic"));
     
         showMenu = false;
+      }
+    }
+
+    function closeNav() {
+      if (!showMenu){
+        showMenu = false;
+        console.log("nic")
+      }
+      else
+      {console.log("zamknij");
+      hamburger.classList.remove('open');
+        nav.classList.remove('open');
+        menuNav.classList.remove('open');
+        navItems.forEach(item => item.classList.remove('open'));
+        hide.forEach(item => item.classList.remove("nic"));
       }
     }
 

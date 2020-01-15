@@ -1,54 +1,78 @@
-.menu-btn {
-    position: absolute;
-    z-index: 1;
-    right: 1rem;
-    top: 1rem;
-    height: 20px;
-    width: 28px;
-    cursor: pointer;
-    @include transition-ease;
+@include media-md {
+    .menu-btn {
+      visibility: hidden;
+    }
+
+    #regulacje {
+      flex-direction: row;
+    }
+
+    #kontakt {
+      flex-direction: row;
+    }
+
+    #map {
+      left: 2rem;
+    }
+    
+    .nav {
+      visibility: visible;
   
-    &__burger {
-      position: absolute;
-      right: 0;
-      top: 0.5rem;
-      width: 28px;
-      height: 3px;
-      background: set-text-color($primary-color);
-      @include transition-ease;
+      .menu-nav {
+        display: block;
+        float: none;
+        transform: translateY(0);
+        height: 100%;
+        text-align: right;
   
-      &::before {
-        content: '';
-        position: absolute;
-        top: -8px;
-        width: 28px;
-        height: 3px;
-        background: set-text-color($primary-color);
-        @include transition-ease;
-      }
-  
-      &::after {
-        content: '';
-        position: absolute;
-        top: 8px;
-        width: 20px;
-        height: 3px;
-        background: set-text-color($primary-color);
-        @include transition-ease;
-      }
-  
-      &.open {
-        transform: rotate(720deg);
-        background: transparent;
-  
-        &::before {
-          transform: rotate(45deg) translate(5px, 8px);
+        &__item {
+          display: inline;
+          padding-right: 1.5rem;
         }
   
-        &::after {
-          width: 28px;
-          transform: rotate(-45deg) translate(3px, -7px);
+        &__link {
+          font-size: 1.5rem;
         }
+        
       }
+    }
+
+    
+  
+    .about__bio {
+      font-size: 1.5rem;
+    }
+  
+    .projects {
+      &__bio-image {
+        height: 40vh;
+      }
+      &__items {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .text-secondary {
+        font-size: 3rem;
+      }
+    }
+  
+    .contact__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @include media-lg {
+    .projects {
+      &__items {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .contact__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @include media-xl {
+    .projects__bio-image {
+      height: 50vh;
     }
   }

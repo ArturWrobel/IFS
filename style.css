@@ -21,11 +21,7 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-  
-  .lead {
-    font-size: 1.5vh;
-  }
-  
+    
   .navbar {
     position: fixed;
     top: 0;

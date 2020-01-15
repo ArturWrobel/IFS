@@ -10,11 +10,7 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-  
-  .lead {
-    font-size: 1.5vh;
-  }
-  
+    
   section {
     display: flex;
     flex-direction: column;
@@ -30,7 +26,7 @@
 
   section1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -42,6 +38,8 @@
   }
 
   section1 .jeden {
+    line-height: 1.5;
+    font-size: 1.25rem;
     height: 80vh;
     margin: 50px;
     flex: 1;
@@ -58,8 +56,7 @@
   }
   
   section h1 {
-    font-size: 8vh;
-    line-height: 100vh;
+    font-size: 6vh;
   }
 
   section1 h1 {
@@ -75,6 +72,7 @@
     transition: all 0.7s ease;
     transform: translateY(50px);
     display: inline-block;
+    line-height: 1rem;
   }
   
   span.fade {
@@ -84,9 +82,10 @@
   
   .logo img {
     position: absolute;
-    height: 7vh;
+    height: 50px;
     margin-top: 0px;
     margin-left: 20px;
+    z-index: 2;
   }
 
   .footer {
@@ -103,13 +102,13 @@
     position: relative;
     max-height: 50%;
     max-width: 50%;
-    right: 10%;
+    left: 2rem;
     flex-direction: row;
   }
 
    /* Section*/
   section#home {
-    background: url("../bb-slider-00.jpg") no-repeat center center;
+   background: url("../bb-slider-00.jpg") no-repeat center center;
     
   }
   
@@ -153,7 +152,6 @@
 .button:hover {
   background: #15836f;
   color: rgb(156, 156, 156);
-  
 }
 
 .buttonn {
@@ -198,10 +196,7 @@ align-items: center;
   font-size: large;
 }
 
-#logo {
-  height: 5vw;
-  width: 6vw;
-}
+
 
 .anonim {
   font-size: 2vh;
@@ -252,4 +247,9 @@ font-size: 4vh;
 
 .text h1 {
   font-size: 2vw;
+}
+
+.nic {
+  font-size: 0;
+  height: 0;
 }
