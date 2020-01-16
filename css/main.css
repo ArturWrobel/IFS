@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  margin: 0;
+  margin: 1px;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -181,20 +181,32 @@ body {
   .menu-btn {
     visibility: hidden;
   }
+  * {
+    margin: 0px;
+  }
+  .move {
+    font-size: 8vh;
+  }
   #regulacje {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  section1 .jeden h2 {
+    font-size: 2rem;
+  }
+  section1 .jeden h3 {
+    font-size: 1.5rem;
+  }
+  section1 .jeden p, section1 .jeden li {
+    font-size: 1.25rem;
+  }
   #kontakt {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  #map {
-    left: 2rem;
   }
   .nav {
     visibility: visible;
@@ -214,42 +226,24 @@ body {
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
-  .about__bio {
-    font-size: 1.5rem;
-  }
-  .projects__bio-image {
-    height: 40vh;
-  }
-  .projects__items {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .projects .text-secondary {
-    font-size: 3rem;
-  }
-  .contact__list {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
 }
 
-@media screen and (min-width: 1024px) {
-  .projects__items {
-    -ms-grid-columns: (1fr)[3];
+/* @include media-lg {
+    .projects {
+      &__items {
         grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .contact__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
-  .contact__list {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .projects__bio-image {
-    height: 50vh;
-  }
-}
-
+  
+  @include media-xl {
+    .projects__bio-image {
+      height: 50vh;
+    }
+  } */
 .container {
   width: 100%;
   height: 100%;
@@ -304,17 +298,17 @@ section1 {
 
 section1 .jeden {
   line-height: 1.5;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   height: 80vh;
   margin: 50px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: left;
-  color: white;
   text-align: justify;
   list-style-position: inside;
   overflow: auto;
+  background: #c7be94;
 }
 
 .para {
@@ -323,11 +317,7 @@ section1 .jeden {
 }
 
 section h1 {
-  font-size: 6vh;
-}
-
-section1 h1 {
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 section1 h2 {
@@ -358,6 +348,10 @@ span.fade {
   z-index: 2;
 }
 
+#logo {
+  width: 20%;
+}
+
 .footer {
   font-size: 1rem;
   position: fixed;
@@ -370,13 +364,12 @@ span.fade {
 
 #map {
   position: relative;
-  max-height: 50%;
-  max-width: 50%;
-  left: 2rem;
+  max-width: 90%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  bottom: 1%;
 }
 
 /* Section*/
@@ -388,10 +381,9 @@ section#about {
   background: #f0d353 no-repeat center center;
 }
 
-section#personel {
-  background: #f8983d no-repeat center center;
-}
-
+/* section#personel {
+    background: rgb(248, 152, 61) no-repeat center center;
+  } */
 section#wladze {
   background: white no-repeat center center;
 }
@@ -401,8 +393,8 @@ section1#regulacje {
 }
 
 section1#kontakt {
-  background: -webkit-gradient(linear, left top, right top, from(lightgrey), to(grey)) no-repeat center center/cover;
-  background: linear-gradient(to right, lightgrey, grey) no-repeat center center/cover;
+  background: -webkit-gradient(linear, left top, right top, from(grey), to(lightgrey)) no-repeat center center/cover;
+  background: linear-gradient(to right, grey, lightgrey) no-repeat center center/cover;
 }
 
 .button {
@@ -459,8 +451,8 @@ section1#kontakt {
 }
 
 .popup-content {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 300px;
   background: #d9cb9e;
   padding: 20px;
   border-radius: 5px;
@@ -483,6 +475,7 @@ section1#kontakt {
 .anonim {
   font-size: 2vh;
   font-weight: 600;
+  text-align: center;
 }
 
 .close {

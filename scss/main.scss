@@ -1,6 +1,7 @@
 @import 'config';
 @import 'menu';
 @import 'responsive';
+  
       
   .container {
     width: 100%;
@@ -39,15 +40,15 @@
 
   section1 .jeden {
     line-height: 1.5;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     height: 80vh;
     margin: 50px;
     flex: 1;
     text-align: left;
-    color: white;
     text-align: justify;
     list-style-position: inside;
-    overflow: auto
+    overflow: auto;
+    background: #c7be94;
   }
 
   .para {
@@ -56,12 +57,9 @@
   }
   
   section h1 {
-    font-size: 6vh;
+    font-size: 2.5vh;
   }
-
-  section1 h1 {
-    font-size: 3vh;
-  }
+ 
 
   section1 h2 {
     font-size: 2vh;
@@ -87,6 +85,9 @@
     margin-left: 20px;
     z-index: 2;
   }
+  #logo {
+    width: 20%;
+  }
 
   .footer {
     font-size: 1rem;
@@ -96,14 +97,14 @@
     bottom: 2%;
     color: black;
     text-decoration: none;
+    
   }
 
   #map {
     position: relative;
-    max-height: 50%;
-    max-width: 50%;
-    left: 2rem;
+    max-width: 90%;
     flex-direction: row;
+    bottom: 1%;
   }
 
    /* Section*/
@@ -116,9 +117,9 @@
     background: rgb(240, 211, 83) no-repeat center center;
   }
   
-  section#personel {
+  /* section#personel {
     background: rgb(248, 152, 61) no-repeat center center;
-  }
+  } */
 
   section#wladze {
     background: white no-repeat center center;
@@ -130,7 +131,7 @@
   }
 
   section1#kontakt {
-    background: linear-gradient(to right,lightgrey ,grey) no-repeat center center/cover;
+    background: linear-gradient(to right,grey ,lightgrey) no-repeat center center/cover;
   }
 
 .button {
@@ -180,8 +181,8 @@ align-items: center;
 }
 
 .popup-content {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 300px;
   background:rgb(217, 203, 158);
   padding: 20px;
   border-radius: 5px;
@@ -201,6 +202,7 @@ align-items: center;
 .anonim {
   font-size: 2vh;
   font-weight: 600;
+  text-align: center;
 }
 
 .close {

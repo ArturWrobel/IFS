@@ -3,18 +3,36 @@
       visibility: hidden;
     }
 
+    * {
+      margin: 0px;
+      }
+
+    .move {
+      font-size: 8vh
+    }
+
     #regulacje {
       flex-direction: row;
     }
+   
+
+    section1 .jeden {
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p, li {
+        font-size: 1.25rem;
+      }
+    }
+
 
     #kontakt {
       flex-direction: row;
     }
-
-    #map {
-      left: 2rem;
-    }
-    
+        
     .nav {
       visibility: visible;
   
@@ -36,31 +54,11 @@
         
       }
     }
-
     
-  
-    .about__bio {
-      font-size: 1.5rem;
-    }
-  
-    .projects {
-      &__bio-image {
-        height: 40vh;
-      }
-      &__items {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .text-secondary {
-        font-size: 3rem;
-      }
-    }
-  
-    .contact__list {
-      grid-template-columns: repeat(2, 1fr);
-    }
+
   }
   
-  @include media-lg {
+  /* @include media-lg {
     .projects {
       &__items {
         grid-template-columns: repeat(3, 1fr);
@@ -75,4 +73,4 @@
     .projects__bio-image {
       height: 50vh;
     }
-  }
+  } */
